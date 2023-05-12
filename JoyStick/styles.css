@@ -1,0 +1,162 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 0.5fr repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 100vw;
+  height: 100vh;
+  }
+
+.div1 { grid-area: 3/ 3 / 2 / 4; }
+
+.div2{grid-area: 6 / 5 / 1/ 2; }
+
+.div3{grid-area: 1 / 1/ 1 / 6; }
+
+.div3 {
+  background-color: #65808B;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.div4{grid-area: 1 / 1 / 2 / 2; }
+
+.div5 { grid-area: 1 / 1 / 2 / 6; }
+
+
+
+body {
+	background-image: url("alessio-soggetti-rSFxBGpnluw-unsplash.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+
+#mon-bouton {
+
+/* Styles de base pour le bouton */
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 36px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 50px;
+  background-color: #BCD6E5;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(169, 140, 255, 0.4);
+  overflow: hidden;
+}
+
+
+
+  
+  .nav-item {
+    margin: 0 100px;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100vw ;
+    height: 100vh;
+    padding: 0;
+    margin: 0 ;
+    }
+
+
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+
+    .div6 { grid-area: 2 / 2 / 5 / 5; }
+
+    .social-buttons { grid-area: 1 / 1 / 2 / 2; }
+
+    
+
+
+
+    .footer {
+      background-color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      padding: 0;
+      margin: 0;
+    }
+
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .social-buttons a {
+      display: block;
+      margin: 0 20px;
+      width: 50px;
+      height: 50px;
+    }
+    
+    .social-buttons a img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease-in-out;
+    }
+    
+    .social-buttons a:hover img {
+      filter: none;
+    }
+
+    .image-container {
+      
+      width: 250px;
+      height: 250px;
+      margin: 20px auto;
+      border: 1px solid black;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .image-container img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .div1 {
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      color: #333333;}
+
+  
+  
+  
+  

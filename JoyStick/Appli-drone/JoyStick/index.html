@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+	
+		<meta charset="utf-8">
+
+		<h1 id="coord1">
+		</h1>
+
+		<h1 id="coord2">
+		</h1>
+
+
+
+		<style>*
+{
+	margin-right: 400px;
+	box-sizing: border-box;
+}
+body
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: monospace;
+}
+.row
+{
+	display: inline-flex;
+	clear: both;
+}
+.columnLateral
+{
+  float: left;
+  width: 15%;
+  min-width: 300px;
+}
+.columnCetral
+{
+  float: left;
+  width: 70%;
+  min-width: 300px;
+}
+#joy2Div
+{
+	width:200px;
+	height:200px;
+	margin:50px
+}
+#joystick
+{
+	border: 1px solid #FF0000;
+}
+		</style>
+		<script src="joy.js"></script>
+	</head>
+	<meta name="viewport" content="width=device-width" />
+	<body>
+		<div class="row">
+			<div class="columnLateral">
+				<div id="joy1Div" style="width:200px;height:200px;margin:50px"></div>
+			</div>
+			<div class="columnLateral">
+				<div id="joy2Div"></div>
+			</div>			
+		</div>
+		<script type="text/javascript">
+
+
+// Create JoyStick object into the DIV 'joy1Div'
+coord2=document.getElementById("coord2");
+
+var Joy1 = new JoyStick('joy1Div', {}, function(stickData) {
+	console.log("x"+stickData.x);
+	console.log("y"+stickData.y);
+	coord2.innerHTML = "x:"+String(stickData.x)+" y:"+String(stickData.y);
+
+});
+coord1=document.getElementById("coord1");
+
+// Create JoyStick object into the DIV 'joy1Div'
+var Joy1 = new JoyStick('joy2Div', {}, function(stickData) {
+	console.log("x"+stickData.x);
+	console.log("y"+stickData.y);
+	coord1.innerHTML = "x:"+String(stickData.x)+" y:"+String(stickData.y);
+});
+
+		</script>
+	</body>
+</html>
